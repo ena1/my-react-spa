@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reach/router": "^1.2.1",
+    "bootstrap": "^4.3.1",
+    "firebase": "^5.9.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-icons": "^3.5.0",
+    "react-scripts": "2.1.8",
+    "typescript": "^3.3.4000"
   },
   "scripts": {
     "start": "react-scripts start",
