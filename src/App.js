@@ -46,11 +46,32 @@ class App extends Component {
     });
   };
 
+  logOutUser = e => {
+    e.preventDefault();
+    this.setState({
+      displayName: null,
+      userID: null,
+      user: null
+    });
+
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        navigate("/login");
+      });
+  };
+
   render() {
     return (
       <div>
-        <Navigation user={this.state.user} />
-        {this.state.user && <Welcome userName={this.state.displayName} />}
+        <Navigation user={this.state.user} logOutUser={this.logOutUser} />
+        {this.state.user && (
+          <Welcome
+            userName={this.state.displayName}
+            logOutUser={this.logOutUser}
+          />
+        )}
 
         <Router>
           <Home path="/" user={this.state.user} />
