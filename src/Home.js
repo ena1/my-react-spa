@@ -5,7 +5,6 @@ class Home extends Component {
   render() {
     const { user } = this.props;
 
-    // eslint-disable-next-line
     const biggerLead = {
       fontSize: 1.4 + "em",
       fontWeight: 200
