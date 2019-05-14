@@ -45,7 +45,7 @@ class MeetingsList extends Component {
             >
               <FaLink />
             </button>
-            
+
             <button
               className="btn btn-small btn-outline-secondary"
               title="Attendees List"
