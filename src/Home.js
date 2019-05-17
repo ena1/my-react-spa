@@ -21,7 +21,7 @@ class Home extends Component {
             >
               Meeting Log
             </div>
-            <p className="lead">
+            <p className="lead" style={biggerLead}>
               This simple app creates meetings, allows people to check in, and
               picks random users to award giveaways. It's a good example of a
               Single Page Application which includes connection to a database
