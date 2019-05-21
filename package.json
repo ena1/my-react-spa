@@ -2,6 +2,7 @@
   "name": "my-react-spa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://go2ena.com/personal-projects/react-spa-meetings/build/index.html",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "bootstrap": "^4.3.1",
