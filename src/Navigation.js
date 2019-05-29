@@ -8,10 +8,13 @@ class Navigation extends Component {
     return (
       <nav className="site-nav family-sans navbar navbar-expand bg-primary navbar-dark higher">
         <div className="container-fluid">
-          <a href="/" className="navbar-brand">
+          <Link
+            to="/home"
+            className="navbar-brand"
+          >
             <FaUsers className="mr-1" />
             Meeting Log
-          </a>
+          </Link>
           <div className="navbar-nav ml-auto">
             {user && (
               <Link className="nav-item nav-link" to="/meetings">
