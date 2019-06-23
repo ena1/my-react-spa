@@ -102,9 +102,9 @@ class App extends Component {
           />
         )}
 
-        <Router>
+        <Router basepath="/personal-projects/meeting-log-spa">
           <Home
-            path="/home"
+            path="/"
             user={this.state.user}
           />
           <Login path="/login" />
@@ -120,7 +120,10 @@ class App extends Component {
           />
 
           <CheckIn path="/checkin/:userID/:meetingID" />
-          <Register path="/register" registerUser={this.registerUser} />
+          <Register
+            path="/register"
+            registerUser={this.registerUser}
+          />
         </Router>
       </div>
     );

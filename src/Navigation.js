@@ -9,7 +9,7 @@ class Navigation extends Component {
       <nav className="site-nav family-sans navbar navbar-expand bg-primary navbar-dark higher">
         <div className="container-fluid">
           <Link
-            to="/home"
+            to="/personal-projects/meeting-log-spa/"
             className="navbar-brand"
           >
             <FaUsers className="mr-1" />
@@ -17,24 +17,24 @@ class Navigation extends Component {
           </Link>
           <div className="navbar-nav ml-auto">
             {user && (
-              <Link className="nav-item nav-link" to="/meetings">
+              <Link className="nav-item nav-link" to="/personal-projects/meeting-log-spa/meetings">
                 Meetings
               </Link>
             )}
             {!user && (
-              <Link className="nav-item nav-link" to="/login">
+              <Link className="nav-item nav-link" to="/personal-projects/meeting-log-spa/login">
                 Log In
               </Link>
             )}
             {!user && (
-              <Link className="nav-item nav-link" to="/register">
+              <Link className="nav-item nav-link" to="/personal-projects/meeting-log-spa/register">
                 Register
               </Link>
             )}
             {user && (
               <Link
                 className="nav-item nav-link"
-                to="/login"
+                to="/personal-projects/meeting-log-spa/login"
                 onClick={e => logOutUser(e)}
               >
                 Log Out

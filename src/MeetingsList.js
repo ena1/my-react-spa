@@ -40,7 +40,7 @@ class MeetingsList extends Component {
               className="btn btn-small btn-outline-secondary"
               title="Check In"
               onClick={ () => navigate(
-                `/checkin/${this.props.userID}/${item.meetingID}`
+                `/personal-projects/meeting-log-spa/checkin/${this.props.userID}/${item.meetingID}`
               )}
             >
               <FaLink />
@@ -50,7 +50,7 @@ class MeetingsList extends Component {
               className="btn btn-small btn-outline-secondary"
               title="Attendees List"
               onClick={ () => navigate(
-                `/attendees/${this.props.userID}/${item.meetingID}`
+                `/personal-projects/meeting-log-spa/attendees/${this.props.userID}/${item.meetingID}`
               )}
             >
               <GoListUnordered />
